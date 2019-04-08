@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="375dp"
+        android:layout_margin="40dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textSize="30dp"
+            android:paddingBottom="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/holo_red_light"
+            android:id="@+id/textClose" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pic"
+            android:background="@android:color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username :  "
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user"
+                android:layout_toRightOf="@+id/username"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBaseline="@+id/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender : "
+                android:id="@+id/gender"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_below="@+id/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gen"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/gender"
+                android:layout_alignBaseline="@+id/gender"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email : "
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/mail"
+                android:textStyle="bold"
+                android:layout_below="@+id/gender"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@+id/mail"
+                android:layout_alignBaseline="@+id/mail"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/p"
+                android:text="Phone : "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/mail"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/p"
+                android:textColor="@android:color/black"
+                android:layout_alignBaseline="@+id/p"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
